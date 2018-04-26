@@ -202,7 +202,7 @@ foreach(ma = ma.files, .packages = c("doParallel")) %dopar% {
     ma.table$x_doi <- unlist(x_doi)
     assign(paste0("ma.table", doi), ma.table)
     
-    write.csv(x = ma.table, file = paste(table.dir, i, sep = ""))  # Save edited table back to csv  
+    write.csv(x = ma.table, file = paste(table.dir, i, sep = ""), row.names = F)  # Save edited table back to csv  
     
   }
 }
