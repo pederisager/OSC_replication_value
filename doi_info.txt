@@ -1,0 +1,3259 @@
+$get_statement
+Response [http://api.elsevier.com/content/abstract/doi/10.1037/bul0000055?apiKey=9ac91fdbf147316eeb53a16681ddc95f]
+  Date: 2018-03-26 15:27
+  Status: 200
+  Content-Type: application/json;charset=UTF-8
+  Size: 70.9 kB
+{"abstracts-retrieval-response": {
+    "coredata": {
+        "openaccess": null,
+        "link": [
+            {
+                "@href": "http://api.elsevier.com/content/abstract/scopus_id/85014387793",
+                "@_fa": "true",
+                "@rel": "self"
+            },
+            {
+...
+
+$content
+$content$`abstracts-retrieval-response`
+$content$`abstracts-retrieval-response`$coredata
+$content$`abstracts-retrieval-response`$coredata$openaccess
+NULL
+
+$content$`abstracts-retrieval-response`$coredata$link
+$content$`abstracts-retrieval-response`$coredata$link[[1]]
+$content$`abstracts-retrieval-response`$coredata$link[[1]]$`@href`
+[1] "http://api.elsevier.com/content/abstract/scopus_id/85014387793"
+
+$content$`abstracts-retrieval-response`$coredata$link[[1]]$`@_fa`
+[1] "true"
+
+$content$`abstracts-retrieval-response`$coredata$link[[1]]$`@rel`
+[1] "self"
+
+
+$content$`abstracts-retrieval-response`$coredata$link[[2]]
+$content$`abstracts-retrieval-response`$coredata$link[[2]]$`@href`
+[1] "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85014387793&origin=inward"
+
+$content$`abstracts-retrieval-response`$coredata$link[[2]]$`@_fa`
+[1] "true"
+
+$content$`abstracts-retrieval-response`$coredata$link[[2]]$`@rel`
+[1] "scopus"
+
+
+$content$`abstracts-retrieval-response`$coredata$link[[3]]
+$content$`abstracts-retrieval-response`$coredata$link[[3]]$`@href`
+[1] "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85014387793&origin=inward"
+
+$content$`abstracts-retrieval-response`$coredata$link[[3]]$`@_fa`
+[1] "true"
+
+$content$`abstracts-retrieval-response`$coredata$link[[3]]$`@rel`
+[1] "scopus-citedby"
+
+
+
+$content$`abstracts-retrieval-response`$coredata$`prism:doi`
+[1] "10.1037/bul0000055"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:coverDate`
+[1] "2017-03-01"
+
+$content$`abstracts-retrieval-response`$coredata$eid
+[1] "2-s2.0-85014387793"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:description`
+[1] "© 2017 American Psychological Association. Cognitive- behavioral therapy (CBT) has a solid evidence base as an effective treatment for depression. However, a recent meta-analysis (Johnsen & Friborg, 2015) including 70 studies, showed that the effect sizes of CBT for depression have been falling between 1977 and 2014. A possible important limitation in the Johnsen and Friborg (2015) study was that they did not investigate a leveling off in the decline over time of the effectiveness of CBT for depression. We therefore reanalyzed the data reported by Johnsen and Friborg (2015) using meta-analytic regression models that allowed for a curvilinear effect of publication year and also modeled separate estimates of the decline of treatment effect before and after 1995. Our analyses showed that adding a quadratic effect of time to a linear effect of time significantly improved the meta-analytic regression models (p = .017-.027). Furthermore, significant declines were only observed between 1977 and 1995 (p = .001-.009) and not between 1995 to 2014 (p = .987-.785). We conclude that the declining effect of CBT for depression observed by Johnsen and Friborg (2015) was highly influenced by 22 studies published before 1995 and that the 48 studies published after 1995 did not demonstrate such a decline. Thus, there are no indications that CBT for depression is gradually losing its value."
+
+$content$`abstracts-retrieval-response`$coredata$subtypeDescription
+[1] "Article"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:issn`
+[1] "00332909"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:endingPage`
+[1] "325"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:title`
+[1] "The effects of cognitive-behavioral therapy for depression are not falling: A re-analysis of johnsen and friborg (2015)"
+
+$content$`abstracts-retrieval-response`$coredata$openaccessFlag
+NULL
+
+$content$`abstracts-retrieval-response`$coredata$`source-id`
+[1] "13443"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:pageRange`
+[1] "321-325"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`author-url`
+[1] "http://api.elsevier.com/content/author/author_id/15923476700"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`ce:indexed-name`
+[1] "Ljotsson B."
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`preferred-name`
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`preferred-name`$`ce:indexed-name`
+[1] "Ljótsson B."
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`preferred-name`$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`preferred-name`$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`preferred-name`$`ce:surname`
+[1] "Ljótsson"
+
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`@auid`
+[1] "15923476700"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$affiliation
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$affiliation$`@href`
+[1] "http://api.elsevier.com/content/affiliation/affiliation_id/60012311"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$affiliation$`@id`
+[1] "60012311"
+
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`ce:surname`
+[1] "Ljótsson"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:creator`$author[[1]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$coredata$`prism:issueIdentifier`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:aggregationType`
+[1] "Journal"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:url`
+[1] "http://api.elsevier.com/content/abstract/scopus_id/85014387793"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:volume`
+[1] "143"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:publisher`
+[1] "American Psychological Association Inc. journals@apa.org"
+
+$content$`abstracts-retrieval-response`$coredata$subtype
+[1] "ar"
+
+$content$`abstracts-retrieval-response`$coredata$`citedby-count`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$coredata$srctype
+[1] "j"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:publicationName`
+[1] "Psychological Bulletin"
+
+$content$`abstracts-retrieval-response`$coredata$`dc:identifier`
+[1] "SCOPUS_ID:85014387793"
+
+$content$`abstracts-retrieval-response`$coredata$`prism:startingPage`
+[1] "321"
+
+
+$content$`abstracts-retrieval-response`$authkeywords
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[1]]
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[1]]$`$`
+[1] "Cognitive-behavior therapy"
+
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[2]]
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[2]]$`$`
+[1] "Depression"
+
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[3]]
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[3]]$`$`
+[1] "Meta-analysis"
+
+$content$`abstracts-retrieval-response`$authkeywords$`author-keyword`[[3]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$authors
+$content$`abstracts-retrieval-response`$authors$author
+$content$`abstracts-retrieval-response`$authors$author[[1]]
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`author-url`
+[1] "http://api.elsevier.com/content/author/author_id/15923476700"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`ce:indexed-name`
+[1] "Ljotsson B."
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`preferred-name`
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`preferred-name`$`ce:indexed-name`
+[1] "Ljótsson B."
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`preferred-name`$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`preferred-name`$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`preferred-name`$`ce:surname`
+[1] "Ljótsson"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`@auid`
+[1] "15923476700"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$affiliation
+$content$`abstracts-retrieval-response`$authors$author[[1]]$affiliation$`@href`
+[1] "http://api.elsevier.com/content/affiliation/affiliation_id/60012311"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$affiliation$`@id`
+[1] "60012311"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`ce:surname`
+[1] "Ljótsson"
+
+$content$`abstracts-retrieval-response`$authors$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`author-url`
+[1] "http://api.elsevier.com/content/author/author_id/6602174510"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`ce:indexed-name`
+[1] "Hedman E."
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`preferred-name`
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`preferred-name`$`ce:indexed-name`
+[1] "Hedman E."
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`preferred-name`$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`preferred-name`$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`preferred-name`$`ce:surname`
+[1] "Hedman"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`@auid`
+[1] "6602174510"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$affiliation
+$content$`abstracts-retrieval-response`$authors$author[[2]]$affiliation$`@href`
+[1] "http://api.elsevier.com/content/affiliation/affiliation_id/60012311"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$affiliation$`@id`
+[1] "60012311"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`ce:surname`
+[1] "Hedman"
+
+$content$`abstracts-retrieval-response`$authors$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`author-url`
+[1] "http://api.elsevier.com/content/author/author_id/57193497793"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`ce:indexed-name`
+[1] "Mattsson S."
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`preferred-name`
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`preferred-name`$`ce:indexed-name`
+[1] "Mattsson S."
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`preferred-name`$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`preferred-name`$`ce:given-name`
+[1] "Simon"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`preferred-name`$`ce:surname`
+[1] "Mattsson"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`@auid`
+[1] "57193497793"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$affiliation
+$content$`abstracts-retrieval-response`$authors$author[[3]]$affiliation$`@href`
+[1] "http://api.elsevier.com/content/affiliation/affiliation_id/60012311"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$affiliation$`@id`
+[1] "60012311"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`ce:given-name`
+[1] "Simon"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`ce:surname`
+[1] "Mattsson"
+
+$content$`abstracts-retrieval-response`$authors$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`author-url`
+[1] "http://api.elsevier.com/content/author/author_id/9637020000"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`ce:indexed-name`
+[1] "Andersson E."
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`preferred-name`
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`preferred-name`$`ce:indexed-name`
+[1] "Andersson E."
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`preferred-name`$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`preferred-name`$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`preferred-name`$`ce:surname`
+[1] "Andersson"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`@auid`
+[1] "9637020000"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$affiliation
+$content$`abstracts-retrieval-response`$authors$author[[4]]$affiliation$`@href`
+[1] "http://api.elsevier.com/content/affiliation/affiliation_id/60012311"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$affiliation$`@id`
+[1] "60012311"
+
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`ce:surname`
+[1] "Andersson"
+
+$content$`abstracts-retrieval-response`$authors$author[[4]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$`subject-areas`
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[1]]
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[1]]$`@abbrev`
+[1] "PSYC"
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[1]]$`@code`
+[1] "3200"
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[1]]$`$`
+[1] "Psychology (all)"
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[2]]
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[2]]$`@abbrev`
+[1] "ARTS"
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[2]]$`@code`
+[1] "1207"
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[2]]$`$`
+[1] "History and Philosophy of Science"
+
+$content$`abstracts-retrieval-response`$`subject-areas`$`subject-area`[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$idxterms
+NULL
+
+$content$`abstracts-retrieval-response`$item
+$content$`abstracts-retrieval-response`$item$`ait:process-info`
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:status`
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:status`$`@type`
+[1] "core"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:status`$`@stage`
+[1] "S300"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:status`$`@state`
+[1] "update"
+
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-sort`
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-sort`$`@month`
+[1] "03"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-sort`$`@day`
+[1] "01"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-sort`$`@year`
+[1] "2017"
+
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-delivered`
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-delivered`$`@timestamp`
+[1] "2017-06-18T23:36:57.000057+01:00"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-delivered`$`@month`
+[1] "06"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-delivered`$`@day`
+[1] "18"
+
+$content$`abstracts-retrieval-response`$item$`ait:process-info`$`ait:date-delivered`$`@year`
+[1] "2017"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$history
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$history$`date-created`
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$history$`date-created`$`@timestamp`
+[1] "BST 10:12:26"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$history$`date-created`$`@month`
+[1] "03"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$history$`date-created`$`@day`
+[1] "27"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$history$`date-created`$`@year`
+[1] "2017"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[1]]$`$`
+[1] "614685065"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[1]]$`@idtype`
+[1] "PUI"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[2]]$`$`
+[1] "661698498"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[2]]$`@idtype`
+[1] "CAR-ID"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[3]]$`$`
+[1] "2017006028"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[3]]$`@idtype`
+[1] "SNPSYB"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[4]]$`$`
+[1] "85014387793"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[4]]$`@idtype`
+[1] "SCP"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[5]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[5]]$`$`
+[1] "85014387793"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$itemid[[5]]$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$itemidlist$`ce:doi`
+[1] "10.1037/bul0000055"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$copyright
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$copyright$`$`
+[1] "Copyright 2017 Elsevier B.V., All rights reserved."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$copyright$`@type`
+[1] "Elsevier"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$dbcollection
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$dbcollection[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$dbcollection[[1]]$`$`
+[1] "SNPSYB"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$dbcollection[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$`item-info`$dbcollection[[2]]$`$`
+[1] "Scopusbase"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`abstract-language`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`abstract-language`$`@language`
+[1] "English"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`abstract-language`$`@xml:lang`
+[1] "eng"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`citation-language`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`citation-language`$`@language`
+[1] "English"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`citation-language`$`@xml:lang`
+[1] "eng"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`[[1]]$`$`
+[1] "Cognitive-behavior therapy"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`[[2]]$`$`
+[1] "Depression"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`author-keywords`$`author-keyword`[[3]]$`$`
+[1] "Meta-analysis"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`citation-type`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-info`$`citation-type`$`@code`
+[1] "ar"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$sourcetitle
+[1] "Psychological Bulletin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$issn
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$issn$`$`
+[1] "00332909"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$issn$`@type`
+[1] "print"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$website
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$website$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$website$`ce:e-address`$`$`
+[1] "www.apa.org/journals/bul.html"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$website$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`@type`
+[1] "j"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`translated-sourcetitle`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`translated-sourcetitle`$`$`
+[1] "Psychological Bulletin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`translated-sourcetitle`$`@xml:lang`
+[1] "eng"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate$`date-text`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate$`date-text`$`$`
+[1] "1 March 2017"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate$`date-text`$`@xfab-added`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate$month
+[1] "03"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate$year
+[1] "2017"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationdate$day
+[1] "01"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`@srcid`
+[1] "13443"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publisher
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publisher$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publisher$`ce:e-address`$`$`
+[1] "journals@apa.org"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publisher$`ce:e-address`$`@type`
+[1] "email"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publisher$publishername
+[1] "American Psychological Association Inc."
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$codencode
+[1] "PSBUA"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag$pagerange$`@first`
+[1] "321"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag$pagerange$`@last`
+[1] "325"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag$voliss$`@issue`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$volisspag$voliss$`@volume`
+[1] "143"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`sourcetitle-abbrev`
+[1] "Psychol. Bull."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$`@country`
+[1] "usa"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationyear
+$content$`abstracts-retrieval-response`$item$bibrecord$head$source$publicationyear$`@first`
+[1] "2017"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$abstracts
+[1] "© 2017 American Psychological Association. Cognitive- behavioral therapy (CBT) has a solid evidence base as an effective treatment for depression. However, a recent meta-analysis (Johnsen & Friborg, 2015) including 70 studies, showed that the effect sizes of CBT for depression have been falling between 1977 and 2014. A possible important limitation in the Johnsen and Friborg (2015) study was that they did not investigate a leveling off in the decline over time of the effectiveness of CBT for depression. We therefore reanalyzed the data reported by Johnsen and Friborg (2015) using meta-analytic regression models that allowed for a curvilinear effect of publication year and also modeled separate estimates of the decline of treatment effect before and after 1995. Our analyses showed that adding a quadratic effect of time to a linear effect of time significantly improved the meta-analytic regression models (p = .017-.027). Furthermore, significant declines were only observed between 1977 and 1995 (p = .001-.009) and not between 1995 to 2014 (p = .987-.785). We conclude that the declining effect of CBT for depression observed by Johnsen and Friborg (2015) was highly influenced by 22 studies published before 1995 and that the 48 studies published after 1995 did not demonstrate such a decline. Thus, there are no indications that CBT for depression is gradually losing its value."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$`ce:e-address`$`$`
+[1] "brjann.ljotsson@ki.se"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$`ce:e-address`$`@type`
+[1] "email"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$person
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$person$`ce:indexed-name`
+[1] "Ljotsson B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$person$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$person$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$person$`ce:surname`
+[1] "Ljótsson"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$organization
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$organization$`$`
+[1] "Karolinska Institutet"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$`@country`
+[1] "swe"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$`address-part`
+[1] "Nobels väg 9"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$`postal-code`
+[1] "171 65"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$country
+[1] "Sweden"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$correspondence$affiliation$city
+[1] "Stockholm"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:e-address`$`$`
+[1] "brjann.ljotsson@ki.se"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:e-address`$`@type`
+[1] "email"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:indexed-name`
+[1] "Ljotsson B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`preferred-name`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`preferred-name`$`ce:indexed-name`
+[1] "Ljótsson B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`preferred-name`$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`preferred-name`$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`preferred-name`$`ce:surname`
+[1] "Ljótsson"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`@type`
+[1] "auth"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`@auid`
+[1] "15923476700"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:given-name`
+[1] "Brjánn"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`ce:surname`
+[1] "Ljótsson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`ce:indexed-name`
+[1] "Hedman E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`preferred-name`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`preferred-name`$`ce:indexed-name`
+[1] "Hedman E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`preferred-name`$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`preferred-name`$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`preferred-name`$`ce:surname`
+[1] "Hedman"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`@type`
+[1] "auth"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`@auid`
+[1] "6602174510"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`ce:surname`
+[1] "Hedman"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`ce:indexed-name`
+[1] "Mattsson S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`preferred-name`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`preferred-name`$`ce:indexed-name`
+[1] "Mattsson S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`preferred-name`$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`preferred-name`$`ce:given-name`
+[1] "Simon"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`preferred-name`$`ce:surname`
+[1] "Mattsson"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`@type`
+[1] "auth"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`@auid`
+[1] "57193497793"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`ce:given-name`
+[1] "Simon"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`ce:surname`
+[1] "Mattsson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`ce:indexed-name`
+[1] "Andersson E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`preferred-name`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`preferred-name`$`ce:indexed-name`
+[1] "Andersson E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`preferred-name`$`ce:initials`
+[1] "E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`preferred-name`$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`preferred-name`$`ce:surname`
+[1] "Andersson"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`@type`
+[1] "auth"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`@auid`
+[1] "9637020000"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`ce:given-name`
+[1] "Erik"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`ce:surname`
+[1] "Andersson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$author[[4]]$`@_fa`
+[1] "true"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization[[1]]$`$`
+[1] "Department of Clinical Neuroscience"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization[[2]]$`$`
+[1] "Division of Psychology"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$organization[[3]]$`$`
+[1] "Karolinska Institutet"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$`@dptid`
+[1] "113098424"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$`@afid`
+[1] "60012311"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$`affiliation-id`
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$`affiliation-id`$`@dptid`
+[1] "113098424"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$`affiliation-id`$`@afid`
+[1] "60012311"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$`@country`
+[1] "swe"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`author-group`$affiliation$country
+[1] "Sweden"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$`citation-title`
+[1] "The effects of cognitive-behavioral therapy for depression are not falling: A re-analysis of johnsen and friborg (2015)"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]$`@type`
+[1] "ASJC"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]$classification
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]$classification[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]$classification[[1]]$`$`
+[1] "3200"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]$classification[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[1]]$classification[[2]]$`$`
+[1] "1207"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]$`@type`
+[1] "SUBJABBR"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]$classification
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]$classification[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]$classification[[1]]$`$`
+[1] "PSYC"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]$classification[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$head$enhancement$classificationgroup$classifications[[2]]$classification[[2]]$`$`
+[1] "ARTS"
+
+
+
+
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$`@refcount`
+[1] "22"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-fulltext`
+[1] "American Psychological Association. (2015). Research-Supported Psychological Treatments: Depression. Retrieved October 20, 2015, from http:// www.div12.org/psychological-treatments/disorders/depression/"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "2015"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "20"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Research-Supported Psychological Treatments: Depression"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://www.div12.org/psychological-treatments/disorders/depression/"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-authors`$collaboration
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-authors`$collaboration$`ce:text`
+[1] "American Psychological Association."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-authors`$collaboration$`ce:indexed-name`
+[1] "American Psychological Association."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-authors`$collaboration$`@seq`
+[1] "1"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-sourcetitle`
+[1] "Retrieved October"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "85014319963"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2015"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[1]]$`@id`
+[1] "1"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-fulltext`
+[1] "Baardseth, T. P., Goldberg, S. B., Pace, B. T., Wislocki, A. P., Frost, N. D., Siddiqui, J. R.,. Wampold, B. E. (2013). Cognitive-behavioral therapy versus other therapies: Redux. Clinical Psychology Review, 33, 395-405. http://dx.doi.org/10.1016/j.cpr.2013.01.004"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "395"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "405"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "33"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Cognitive-behavioral therapy versus other therapies: Redux"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1016/j.cpr.2013.01.004"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Baardseth T.P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "T.P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Baardseth"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Goldberg S.B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "S.B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Goldberg"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Pace B.T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "B.T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Pace"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[4]]$`ce:indexed-name`
+[1] "Wislocki A.P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[4]]$`ce:initials`
+[1] "A.P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[4]]$`ce:surname`
+[1] "Wislocki"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[4]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[5]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[5]]$`ce:indexed-name`
+[1] "Frost N.D."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[5]]$`ce:initials`
+[1] "N.D."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[5]]$`@seq`
+[1] "5"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[5]]$`ce:surname`
+[1] "Frost"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[5]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[6]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[6]]$`ce:indexed-name`
+[1] "Siddiqui J.R."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[6]]$`ce:initials`
+[1] "J.R."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[6]]$`@seq`
+[1] "6"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[6]]$`ce:surname`
+[1] "Siddiqui"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[6]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[7]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[7]]$`ce:indexed-name`
+[1] "Wampold B.E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[7]]$`ce:initials`
+[1] "B.E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[7]]$`@seq`
+[1] "7"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[7]]$`ce:surname`
+[1] "Wampold"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-authors`$author[[7]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-sourcetitle`
+[1] "Clinical Psychology Review"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84873727461"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2013"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[2]]$`@id`
+[1] "2"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-fulltext`
+[1] "Beck, A. T., Steer, R. A., & Brown, G. K. (1996). Manual for the Beck Depression Inventory-II. San Antonio, TX: Psychological Corporation."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-text`
+[1] "San Antonio, TX: Psychological Corporation."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Beck A.T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "A.T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Beck"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Steer R.A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "R.A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Steer"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Brown G.K."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "G.K."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Brown"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-sourcetitle`
+[1] "Manual for the Beck Depression Inventory-II."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "0003516113"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1996"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[3]]$`@id`
+[1] "3"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-fulltext`
+[1] "Beck, A. T., Ward, C. H., Mendelson, M., Mock, J., & Erbaugh, J. (1961). An inventory for measuring depression. Archives of General Psychiatry, 4, 561-571. http://dx.doi.org/10.1001/archpsyc.1961.01710120031004"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "561"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "571"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "4"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "An inventory for measuring depression"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1001/archpsyc.1961.01710120031004"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Beck A.T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "A.T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Beck"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Ward C.H."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "C.H."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Ward"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Mendelson M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Mendelson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[4]]$`ce:indexed-name`
+[1] "Mock J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[4]]$`ce:initials`
+[1] "J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[4]]$`ce:surname`
+[1] "Mock"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[4]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[5]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[5]]$`ce:indexed-name`
+[1] "Erbaugh J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[5]]$`ce:initials`
+[1] "J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[5]]$`@seq`
+[1] "5"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[5]]$`ce:surname`
+[1] "Erbaugh"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-authors`$author[[5]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-sourcetitle`
+[1] "Archives of General Psychiatry"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "70350654728"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1961"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[4]]$`@id`
+[1] "4"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-fulltext`
+[1] "Chatterjee, S., & Hadi, A. S. (1986). Influential Observations, High Leverage Points, and Outliers in Linear Regression. Statistical Science, 1, 379-393. http://dx.doi.org/10.1214/ss/1177013622"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "379"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "393"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "1"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Influential Observations, High Leverage Points, and Outliers in Linear Regression"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1214/ss/1177013622"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Chatterjee S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Chatterjee"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Hadi A.S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "A.S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Hadi"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-sourcetitle`
+[1] "Statistical Science"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84972496372"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1986"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[5]]$`@id`
+[1] "5"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-fulltext`
+[1] "Cuijpers, P., Berking, M., Andersson, G., Quigley, L., Kleiboer, A., & Dobson, K. S. (2013). A meta-analysis of cognitive-behavioural therapy for adult depression, alone and in comparison with other treatments. Canadian Journal of Psychiatry, 58, 376-385."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "376"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "385"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "58"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "A meta-analysis of cognitive-behavioural therapy for adult depression, alone and in comparison with other treatments"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Cuijpers P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Cuijpers"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Berking M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Berking"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Andersson G."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "G."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Andersson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[4]]$`ce:indexed-name`
+[1] "Quigley L."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[4]]$`ce:initials`
+[1] "L."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[4]]$`ce:surname`
+[1] "Quigley"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[4]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[5]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[5]]$`ce:indexed-name`
+[1] "Kleiboer A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[5]]$`ce:initials`
+[1] "A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[5]]$`@seq`
+[1] "5"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[5]]$`ce:surname`
+[1] "Kleiboer"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[5]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[6]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[6]]$`ce:indexed-name`
+[1] "Dobson K.S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[6]]$`ce:initials`
+[1] "K.S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[6]]$`@seq`
+[1] "6"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[6]]$`ce:surname`
+[1] "Dobson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-authors`$author[[6]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-sourcetitle`
+[1] "Canadian Journal of Psychiatry"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84877689330"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2013"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[6]]$`@id`
+[1] "6"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-fulltext`
+[1] "Cuijpers, P., van Straten, A., & Andersson, G. (2008). Internetadministered cognitive behavior therapy for health problems: A systematic review. Journal of Behavioral Medicine, 31, 169-177. http://dx.doi .org/10.1007/s10865-007-9144-1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "169"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "177"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "31"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Internetadministered cognitive behavior therapy for health problems: A systematic review"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1007/s10865-007-9144-1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Cuijpers P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "P."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Cuijpers"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "van Straten A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "van Straten"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Andersson G."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "G."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Andersson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-sourcetitle`
+[1] "Journal of Behavioral Medicine"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "43049130722"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2008"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[7]]$`@id`
+[1] "7"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-fulltext`
+[1] "Efron, B., & Tibshirani, R. J. (1993). An Introduction to the Bootstrap. New York, NY: Chapman & Hall. http://dx.doi.org/10.1007/978-1- 4899-4541-9"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-text`
+[1] "New York, NY: Chapman and Hall."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1007/978-1-4899-4541-9"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Efron B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "B."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Efron"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Tibshirani R.J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "R.J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Tibshirani"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-sourcetitle`
+[1] "An Introduction to the Bootstrap."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "0003991665"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1993"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[8]]$`@id`
+[1] "8"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-fulltext`
+[1] "Gaffan, E. A., Tsaousis, I., & Kemp-Wheeler, S. M. (1995). Researcher allegiance and meta-analysis: The case of cognitive therapy for depression. Journal of Consulting and Clinical Psychology, 63, 966-980. http://dx.doi.org/10.1037/0022-006X.63.6.966"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "966"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "980"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "63"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Researcher allegiance and meta-analysis: The case of cognitive therapy for depression"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1037/0022-006X.63.6.966"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Gaffan E.A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "E.A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Gaffan"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Tsaousis I."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "I."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Tsaousis"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Kemp-Wheeler S.M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "S.M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Kemp-Wheeler"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-sourcetitle`
+[1] "Journal of Consulting and Clinical Psychology"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "0028790171"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1995"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[9]]$`@id`
+[1] "9"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-fulltext`
+[1] "Galecki, A., & Burzykowski, T. (2013). Linear Mixed-Effects Models Using R. New York, NY: Springer. http://dx.doi.org/10.1007/978-1- 4614-3900-4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-text`
+[1] "NY: Springer."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1007/978-1-4614-3900-4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Galecki A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Galecki"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Burzykowski T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Burzykowski"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-sourcetitle`
+[1] "Linear Mixed-Effects Models Using R. New York"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84887279247"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2013"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[10]]$`@id`
+[1] "10"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-fulltext`
+[1] "Guy, A., Loewenthal, D., Thomas, R., & Stephenson, S. (2012). Scrutinising NICE: The impact of the National Institute for Health and Clinical Excellence Guidelines on the provision of counselling and psychotherapy in primary care in the UK. Psychodynamic Practice, 18, 25-50. http://dx.doi.org/10.1080/14753634.2012.640153 Hamilton, M. (1960). A rating scale for depression. Journal of Neurology, Neurosurgery, and Psychiatry, 23, 56-62. http://dx.doi.org/10.1136/ jnnp.23.1.56"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "25"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "50"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "18"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Scrutinising NICE: The impact of the National Institute for Health and Clinical Excellence Guidelines on the provision of counselling and psychotherapy in primary care in the UK"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1080/14753634.2012.640153"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Guy A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "A."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Guy"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Loewenthal D."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "D."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Loewenthal"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Thomas R."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "R."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Thomas"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[4]]$`ce:indexed-name`
+[1] "Stephenson S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[4]]$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[4]]$`ce:surname`
+[1] "Stephenson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-authors`$author[[4]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-sourcetitle`
+[1] "Psychodynamic Practice"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84857314029"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2012"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[11]]$`@id`
+[1] "11"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-fulltext`
+[1] "Hamilton,M.(1960).Aratingscale for depression. Journal of Neurology, Neurosurgery, and Psychiatry, 23, 56-62. http://dx.doi.org/10.1136/ jnnp.23.1.56"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "56"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "62"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "23"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Aratingscale for depression."
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1136/jnnp.23.1.56"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Hamilton M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Hamilton"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-sourcetitle`
+[1] "Journal of Neurology, Neurosurgery, and Psychiatry"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "72949151592"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1960"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[12]]$`@id`
+[1] "12"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-fulltext`
+[1] "Johnsen, T. J., & Friborg, O. (2015). The effects of cognitive behavioral therapy as an anti-depressive treatment is falling: A meta-analysis. Psychological Bulletin, 141, 747-768. http://dx.doi.org/10.1037/ bul0000015"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "747"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "768"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "141"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "The effects of cognitive behavioral therapy as an anti-depressive treatment is falling: A meta-analysis"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1037/bul0000015"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Johnsen T.J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "T.J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Johnsen"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Friborg O."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "O."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Friborg"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-sourcetitle`
+[1] "Psychological Bulletin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84934865791"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2015"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[13]]$`@id`
+[1] "13"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-fulltext`
+[1] "Knapp, G., & Hartung, J. (2003). Improved tests for a random effects meta-regression with a single covariate. Statistics in Medicine, 22, 2693-2710. http://dx.doi.org/10.1002/sim.1482"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "2693"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "2710"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "22"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Improved tests for a random effects meta-regression with a single covariate"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1002/sim.1482"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Knapp G."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "G."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Knapp"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Hartung J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Hartung"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-sourcetitle`
+[1] "Statistics in Medicine"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "0042926567"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2003"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[14]]$`@id`
+[1] "14"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-fulltext`
+[1] "Leykin, Y., & DeRubeis, R. J. (2009). Allegiance in Psychotherapy Outcome Research: Separating Association From Bias. Clinical Psychology: Science and Practice, 16, 54-65. http://dx.doi.org/10.1111/j.1468- 2850.2009.01143.x"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "54"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "65"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "16"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Allegiance in Psychotherapy Outcome Research: Separating Association From Bias"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1111/j.1468-2850.2009.01143.x"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Leykin Y."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "Y."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Leykin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "DeRubeis R.J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "R.J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "DeRubeis"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-sourcetitle`
+[1] "Clinical Psychology: Science and Practice"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "60749086824"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2009"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[15]]$`@id`
+[1] "15"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-fulltext`
+[1] "National Institute for Health and Clinical Excellence. (2009). Depression in adults: The treatment and management of depression in adults. CG90. London: National Institute for Health and Care Excellence."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-text`
+[1] "London: National Institute for Health and Care Excellence."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-authors`$collaboration
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-authors`$collaboration$`ce:text`
+[1] "National Institute for Health and Clinical Excellence."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-authors`$collaboration$`ce:indexed-name`
+[1] "National Institute for Health and Clinical Excellence."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-authors`$collaboration$`@seq`
+[1] "1"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-sourcetitle`
+[1] "Depression in adults: The treatment and management of depression in adults. CG90."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84880924911"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2009"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[16]]$`@id`
+[1] "16"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-fulltext`
+[1] "National Institutes of Mental Health. (2015). Depression: Treatment. Retrieved October 20, 2015, from https://www.nimh.nih.gov/health/topics/ depression/index.shtml#part_145399."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "2015"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "20"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Depression: Treatment"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "https://www.nimh.nih.gov/health/topics/depression/index.shtml#part_145399"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-authors`$collaboration
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-authors`$collaboration$`ce:text`
+[1] "National Institutes of Mental Health."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-authors`$collaboration$`ce:indexed-name`
+[1] "National Institutes of Mental Health."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-authors`$collaboration$`@seq`
+[1] "1"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-sourcetitle`
+[1] "Retrieved October"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "85014319963"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2015"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[17]]$`@id`
+[1] "17"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-fulltext`
+[1] "R Core Team. (2015). R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-text`
+[1] "Vienna, Austria: R Foundation for Statistical Computing."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-authors`$collaboration
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-authors`$collaboration$`ce:text`
+[1] "R Core Team."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-authors`$collaboration$`ce:indexed-name`
+[1] "R Core Team."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-authors`$collaboration$`@seq`
+[1] "1"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-sourcetitle`
+[1] "R: A language and environment for statistical computing."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84964927929"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2015"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[18]]$`@id`
+[1] "18"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-fulltext`
+[1] "Shedler, J. (2015). Where is the Evidence for \"Evidence-Based\" Therapy? The Journal of Psychological Therapies in Primary Care, 4, 47-59."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "47"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "59"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "4"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Where is the Evidence for \"Evidence-Based\" Therapy?"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Shedler J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "J."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Shedler"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-sourcetitle`
+[1] "The Journal of Psychological Therapies in Primary Care"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "84976395661"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2015"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[19]]$`@id`
+[1] "19"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-fulltext`
+[1] "Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software, 36, 1-48. http://dx.doi.org/10 .18637/jss.v036.i03"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "48"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "36"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "Conducting meta-analyses in R with the metafor package"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.18637/jss.v036.i03"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Viechtbauer W."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "W."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Viechtbauer"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-sourcetitle`
+[1] "Journal of Statistical Software"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "77958110812"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2010"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[20]]$`@id`
+[1] "20"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-fulltext`
+[1] "Wampold, B. E., Minami, T., Baskin, T. W., & Callen Tierney, S. (2002). A meta-(re)analysis of the effects of cognitive therapy versus 'other therapies' for depression. Journal of Affective Disorders, 68(2-3), 159-165. http://dx.doi.org/10.1016/S0165-0327(00)00287-1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "159"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "165"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`$voliss$`@issue`
+[1] "2-3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "68"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "A meta-(re)analysis of the effects of cognitive therapy versus 'other therapies' for depression"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1016/S0165-0327(00)00287-1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Wampold B.E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "B.E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Wampold"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Minami T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "T."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Minami"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Baskin T.W."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "T.W."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Baskin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[4]]$`ce:indexed-name`
+[1] "Callen Tierney S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[4]]$`ce:initials`
+[1] "S."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[4]]$`ce:surname`
+[1] "Callen Tierney"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-authors`$author[[4]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-sourcetitle`
+[1] "Journal of Affective Disorders"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "0036280553"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "2002"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[21]]$`@id`
+[1] "21"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-fulltext`
+[1] "Wampold, B. E., Mondin, G. W., Moody, M., Stich, F., Benson, K., & Ahn, H.-N. (1997). A meta-analysis of outcome studies comparing bona fide psychotherapies: Empiricially, \"all must have prizes. Psychological Bulletin, 122, 203-215. http://dx.doi.org/10.1037/0033-2909.122.3.203"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-volisspag`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-volisspag`$pagerange
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-volisspag`$pagerange$`@first`
+[1] "203"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-volisspag`$pagerange$`@last`
+[1] "215"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-volisspag`$voliss
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-volisspag`$voliss$`@volume`
+[1] "122"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-title`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-title`$`ref-titletext`
+[1] "A meta-analysis of outcome studies comparing bona fide psychotherapies: Empiricially, \"all must have prizes"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-website`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-website`$`ce:e-address`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-website`$`ce:e-address`$`$`
+[1] "http://dx.doi.org/10.1037/0033-2909.122.3.203"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-website`$`ce:e-address`$`@type`
+[1] "email"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[1]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[1]]$`ce:indexed-name`
+[1] "Wampold B.E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[1]]$`ce:initials`
+[1] "B.E."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[1]]$`@seq`
+[1] "1"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[1]]$`ce:surname`
+[1] "Wampold"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[1]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[2]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[2]]$`ce:indexed-name`
+[1] "Mondin G.W."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[2]]$`ce:initials`
+[1] "G.W."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[2]]$`@seq`
+[1] "2"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[2]]$`ce:surname`
+[1] "Mondin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[2]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[3]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[3]]$`ce:indexed-name`
+[1] "Moody M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[3]]$`ce:initials`
+[1] "M."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[3]]$`@seq`
+[1] "3"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[3]]$`ce:surname`
+[1] "Moody"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[3]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[4]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[4]]$`ce:indexed-name`
+[1] "Stich F."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[4]]$`ce:initials`
+[1] "F."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[4]]$`@seq`
+[1] "4"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[4]]$`ce:surname`
+[1] "Stich"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[4]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[5]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[5]]$`ce:indexed-name`
+[1] "Benson K."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[5]]$`ce:initials`
+[1] "K."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[5]]$`@seq`
+[1] "5"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[5]]$`ce:surname`
+[1] "Benson"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[5]]$`@_fa`
+[1] "true"
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[6]]
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[6]]$`ce:indexed-name`
+[1] "Ahn H.-N."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[6]]$`ce:initials`
+[1] "H.-N."
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[6]]$`@seq`
+[1] "6"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[6]]$`ce:surname`
+[1] "Ahn"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-authors`$author[[6]]$`@_fa`
+[1] "true"
+
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-sourcetitle`
+[1] "Psychological Bulletin"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`refd-itemidlist`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`refd-itemidlist`$itemid
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`refd-itemidlist`$itemid$`$`
+[1] "21944437736"
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`refd-itemidlist`$itemid$`@idtype`
+[1] "SGR"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-publicationyear`
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`ref-info`$`ref-publicationyear`$`@first`
+[1] "1997"
+
+
+
+$content$`abstracts-retrieval-response`$item$bibrecord$tail$bibliography$reference[[22]]$`@id`
+[1] "22"
+
+
+
+
+
+
+
+$content$`abstracts-retrieval-response`$affiliation
+$content$`abstracts-retrieval-response`$affiliation$`@href`
+[1] "http://api.elsevier.com/content/affiliation/affiliation_id/60012311"
+
+$content$`abstracts-retrieval-response`$affiliation$affilname
+[1] "Karolinska Institutet"
+
+$content$`abstracts-retrieval-response`$affiliation$`affiliation-country`
+[1] "Sweden"
+
+$content$`abstracts-retrieval-response`$affiliation$`@id`
+[1] "60012311"
+
+$content$`abstracts-retrieval-response`$affiliation$`affiliation-city`
+[1] "Stockholm"
+
+
+$content$`abstracts-retrieval-response`$language
+$content$`abstracts-retrieval-response`$language$`@xml:lang`
+[1] "eng"
+
+
+
+

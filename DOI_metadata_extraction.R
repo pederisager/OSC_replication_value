@@ -10,6 +10,7 @@ library(rAltmetric)
 library(rscopus)
 library(foreach)
 library(doParallel)
+source("MetaData_functions.R")
 
 #### Set up paralell processing ####
 
@@ -46,26 +47,26 @@ table.dir <- "C:/Users/20176239/Dropbox/jobb/PhD/Projects/Meta-Data/EXCEL_FILES/
 table.dir <- "D:/Dropbox/jobb/PhD/projects/Meta-Data/EXCEL_FILES/2017/"  # Set the directory where meta analysis table files can be found
 
 
-table.file <- list.files(path = table.dir, 
-                         pattern = paste(pbul.gsheet$VL[ma.index], "_", pbul.gsheet$IS[ma.index], "_", pbul.gsheet$BP[ma.index], ".*csv", sep = ""), 
-                         recursive = TRUE)  # Locate relevant table files, based on the row-index of the doi in the meta-analysis gsheet.
-
 
 
 # Set up the ma.files list, aquire the necessary Scopus data, and list each scopus file together with the corresponding meta analysis DOI and table file locations
+table.files <- list.files(path = table.dir,
+                          pattern = ".*csv$",
+                          recursive = TRUE)  # Get list of all csv files in the table directory
+
+
 ma.files <- sapply(1:nrow(pbul.gsheet),
                    function(i) {
                      ma.index <- i
                      doi <- pbul.gsheet[ma.index,"DI"]
                      if (!is.na(doi)) {
-                       table.file <- list.files(path = table.dir,
-                                                pattern = paste(pbul.gsheet$VL[ma.index], "_", pbul.gsheet$IS[ma.index], "_", pbul.gsheet$BP[ma.index], ".*csv", sep = ""),
-                                                recursive = TRUE)  # Locate relevant table files, based on the row-index of the doi in the meta-analysis gsheet.
+                       table.index <- grep(x = table.files, 
+                            pattern = paste(pbul.gsheet$VL[ma.index], "_", pbul.gsheet$IS[ma.index], "_", pbul.gsheet$BP[ma.index], "[^0-9]+", sep = ""))  # Locate the relevant table file, based on the row-index of the doi in the meta-analysis gsheet.
                      }
-                     if (length(table.file > 0)) {
-                       scopus.list <- abstract_retrieval(doi, identifier = "doi")
-                       return(list(doi=doi, table.files=table.file, scopus.list=scopus.list))
-                     }
+                     # if (length(table.file > 0)) {
+                     #   scopus.list <- abstract_retrieval(doi, identifier = "doi")
+                     #   return(list(doi=doi, table.files=table.file, scopus.list=scopus.list))
+                     # }
                    }
 )
 
@@ -98,6 +99,7 @@ foreach(ma = ma.files, .packages = c("doParallel")) %dopar% {
     
     ma.table <- read.csv(paste(table.dir, i, sep = ""), na.strings = c(""))  # Load the relevant meta analysis table
     ma.table$x_doi <- NA  # Set up DOI column
+    ma.table <- fillRows(ma.table)
     
     # Preallocate variables
     matched.refs.doi.missing <- NULL
