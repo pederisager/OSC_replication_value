@@ -1,0 +1,118 @@
+---
+title: "Conjoint_presentation_design"
+author: "Peder M Isager"
+date: "August 9, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Conjoint presented as table
+
+```{r, echo=FALSE}
+options(scipen=999) # Prevent scientific notation
+
+# Number of subjects
+
+nsubs <- c(10, 100, 1000, 10000)
+
+# Citation count
+
+citcount <- c(0, 1, 10, 100, 1000)
+
+# Altmetrix score
+
+altmetric <- c(0, 1, 10, 100, 1000)
+
+# The Journal the study is published in (ranked by impact factor)
+
+journal <- c("Science (34.7)", "Psychological Science (7.4)", "British Journal of Psychology (1.6)", "Current Psychology (0.4)")
+
+# Reported on in major news outlet
+
+newsrep <- c("yes", "no")
+
+# Foundation for practical innovation (e.g. education tool, therapy, public policy)
+
+practical <- c("yes", "no")
+
+# Is included in psych textbooks
+
+inbooks <- c("yes", "no")
+
+# Estimate precision
+
+precision <- c() # Use confidence interval plots as stimuli? 
+
+# Number of replications 
+
+nreps <- c(0, 1, 10)
+
+# Conflicting evidence 
+
+conflict <- c("yes", "no")
+
+# Cost of conducting replication
+
+costUSD <- c(1000, 10000, 100000)
+
+# Contains reporting error
+
+reperror <- c("none", "minor", "major")
+
+# Literature the study is from displays high rates of QRPs
+
+qrpinlit <- c("rare", "somewhat common", "very common")
+
+```
+
+
+### All in one table 
+
+| Attribute | Level | Attribute | Level |
+| :--- | :--- | :--- | :--- |
+| **Citation count** | `r sample(citcount, 1)` | **Citation count** | `r sample(citcount, 1)` |
+| **Altmetric score** | `r sample(altmetric, 1)` | **Altmetric score** | `r sample(altmetric, 1)` |
+| **Subjects tested** | `r sample(nsubs, 1)` | **Subjects tested** | `r sample(nsubs, 1)` |
+| **Reported on in the news** | `r sample(newsrep, 1)` | **Reported on in the news** | `r sample(newsrep, 1)` |
+
+
+## Two tables separated by css code
+
+<table>
+<tr><th>Option 1 </th><th>Option 2</th></tr>
+<tr><td>
+
+| Attribute | Level |
+| :--- | :--- |
+| **Citation count** | `r sample(citcount, 1)` |
+| **Altmetric score** | `r sample(altmetric, 1)` |
+| **Subjects tested** | `r sample(nsubs, 1)` |
+| **Reported on in the news** | `r sample(newsrep, 1)` |
+
+</td><td>
+
+| Attribute | Level |
+| :--- | :--- |
+| **Citation count** | `r sample(citcount, 1)` |
+| **Altmetric score** | `r sample(altmetric, 1)` |
+| **Subjects tested** | `r sample(nsubs, 1)` |
+| **Reported on in the news** | `r sample(newsrep, 1)` |
+
+</td></tr> </table>
+
+## Merged data.frames using knitr::kable()
+
+```{r, echo=FALSE}
+Attributes <- c("Citation count", "Altmetric", "Subjects", "In news")
+Values <- c(sample(citcount, 1), sample(altmetric, 1), sample(nsubs, 1), sample(newsrep, 1))
+option1 <- data.frame(Attributes, Values)
+
+Attributes <- c("Citation count", "Altmetric", "Subjects", "In news")
+Values <- c(sample(citcount, 1), sample(altmetric, 1), sample(nsubs, 1), sample(newsrep, 1))
+option2 <- data.frame(Attributes, Values)
+
+knitr::kable(list(option1, option2))
+```

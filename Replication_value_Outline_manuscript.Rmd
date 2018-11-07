@@ -1,0 +1,57 @@
+---
+title: "Replication value - Outline manuscript"
+author: "Peder M Isager"
+date: "August 22, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Manuscript structure
+
+
+* **Introduction to the idea**
+
+NWO replication grants
+Rolf Zwaan 2018
+Journals accepting replication studies
+Big replication projects like RP:P, Many Labs, and other ones (find examples on CurateScience). 
+
+Explain he rationale and usefulness of a quantifiable replication value. 
+Explain the rationale behind an impact/evidence type ratio. 
+
+
+* **Literature review**
+
+Show that impact and evidence are often used to justify replications in the literature.
+Show other metrics that are also often featured in justifications of replication value. 
+
+
+* **What makes a good formula?**
+    * Objectivety vs subjectivity
+    * Brevity vs easy of calculation
+    * 
+
+* **Formula proposals**
+
+Need to determine which formula would make sense to present. Alternatively, we could present one formula, then experiment with various additions. E.g. start with a citations/n formula, then consequtively add altmetrics, standard deviations, statcheck errors,
+
+* **Formula updating**
+    * Adding evidence from replications
+    * Adding impact from replications? 
+    * When to stop replicating? 
+
+* **Formula performance**
+    * Simulations
+    * Results when running 
+    
+    
+* **Discussion and limitations**
+    * Ideal use-cases
+    * Limitations
+        * Assumes everything is equally theoretically interesting. Bem might be edge case. 
+    * Future directions (theoretical impact/experiment selection, assigning weight functions empirically with conjoint experiments)
+    
+    

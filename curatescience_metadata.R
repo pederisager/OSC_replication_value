@@ -84,5 +84,14 @@ cursci$rvCAP_pyear <- sapply(1:nrow(cursci), function(x) {
 })
 
 
+## rvCApyN
+
+cursci$rvCApyN <- sapply(1:nrow(cursci), function(x) {
+  try(rvCApyN(citations = cursci[[x,"x_crcited"]], 
+              altmetric = cursci[[x,"x_altscore"]], 
+              n = cursci[[x,"orig.N"]], 
+              cursci[[x,"orig.study.pub.year"]], 
+              log = TRUE))
+})
 
 

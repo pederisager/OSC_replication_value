@@ -33,6 +33,22 @@ rvCAN <- function(citations, altmetric, n, weight=c(1,1,1)) {
   return(rv)
 }
 
+
+# Rv based on citations per year + altmetric score per year and N of study. Optional log of input ####
+
+rvCApyN <- function(citations, altmetric, pub.year, n, log = FALSE) {
+  
+  y.since.pub <- as.integer(format(Sys.Date(), "%Y")) - pub.year 
+  y.since.pub[y.since.pub == 0] = 1 # Avoid 0s breaking calculations
+
+  if (log == TRUE) {
+    rv <- log((citations + altmetric) / y.since.pub) / log(n) # if y.since.pub = 0, will divide by 1. Thus, papers from this year and last year will be weighted the same.
+  }else{
+    rv <- ((citations + altmetric) / y.since.pub) / n
+  }
+  return(rv)
+}
+
 # RV based on citations (+ altmetric scores) and standard error (precision) of effect ####
 
 rvCAP <- function(citations, altmetric, precision, weight=c(1,1,1)) { 
@@ -43,6 +59,28 @@ rvCAP <- function(citations, altmetric, precision, weight=c(1,1,1)) {
   
   return(rv)
 }
+
+# RV based on citations (+ altmetric scores) and standard error (precision) of effect ####
+
+rvCApyP <- function(citations, pub.year, se, altmetric = FALSE) {
+  
+  y.since.pub <- as.integer(format(Sys.Date(), "%Y")) - pub.year 
+  y.since.pub[y.since.pub == 0] = 1 # Avoid 0s breaking calculations
+  
+  if (altmetric == FALSE) {
+    
+    rv <- ((citations) / y.since.pub) * se
+    
+    return(rv)
+    
+  } else {
+    
+    rv <- ((citations + altmetric) / y.since.pub) * se
+    
+    return(rv) 
+  }
+}
+
 
 # RV based on citations (+ altmetric scores) and proportion of tests in paper with statcheck errors ####
 
@@ -57,14 +95,29 @@ rvCASt <- function(citations, altmetric, errorrate, weight=c(1,1,1)) {
 
 # Function to create simulated data for RV functions
 
-simStudies <- function(nsims) {
-  citations <- sample(x = 1:1000, size = nsims, replace = TRUE, prob = (1000:1)^2)
-  replications <- rbinom(n = nsims, size = 1, prob = 0.01)
-  r <- runif(n = nsims, min = 0, max = 1)
-  n <- runif(n = nsims, min = 20, max = 1000)
-  se <- runif(n = nsims, min = 0, max = 1)
-  errorrate <- rbinom(n = nsims, size = 10, prob = 0.2)
-  altmetric <- sample(x = 1:1000, size = nsims, replace = TRUE, prob = (1000:1)^2)
-  sim <- data.frame(citations, replications, r, n, se, errorrate, altmetric)
+simStudies <- function(nsims, uniform = TRUE) {
+  
+  if (uniform == TRUE) {
+    
+    citations <- sample(x = 1:1000, size = nsims, replace = TRUE)
+    replications <- rbinom(n = nsims, size = 1, prob = 0.5)
+    r <- runif(n = nsims, min = 0, max = 1)
+    n <- sample(x = 4:1000, size = nsims, replace = TRUE)
+    se <- runif(n = nsims, min = 0, max = 1)
+    errorrate <- sample(x = 1:10, size = nsims, replace = TRUE)
+    altmetric <- sample(x = 1:1000, size = nsims, replace = TRUE)
+    pub.year <- sample(1919:2018, size = nsims, replace = TRUE)
+    sim <- data.frame(citations, replications, r, n, se, errorrate, altmetric, pub.year) }
+  else{
+    citations <- sample(x = 1:1000, size = nsims, replace = TRUE, prob = (1000:1)^2)
+    replications <- rbinom(n = nsims, size = 1, prob = 0.01)
+    r <- runif(n = nsims, min = 0, max = 1)
+    n <- sample(x = 10:1000, size = nsims, replace = TRUE, prob = (1000:10)^2)
+    se <- runif(n = nsims, min = 0, max = 1)
+    errorrate <- rbinom(n = nsims, size = 10, prob = 0.2)
+    altmetric <- sample(x = 1:1000, size = nsims, replace = TRUE, prob = (1000:1)^2)
+    pub.year <- sample(1919:2018, size = nsims, replace = TRUE, prob = (1:100)^2)
+    sim <- data.frame(citations, replications, r, n, se, errorrate, altmetric, pub.year)
+  }
   return(sim)
 }

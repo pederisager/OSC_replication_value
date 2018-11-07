@@ -1,0 +1,201 @@
+---
+title: "Using standard error of pearsons in the RV"
+author: "Peder M Isager"
+date: "September 27, 2018"
+output: html_document
+---
+
+# Rationale for SEr
+
+Using the standard error of an estimate converted to pearsons r is convenient for several reasons:
+    
+  1. The standard error incorporates both the variability of the effect, and the number of subjects used to measure it.
+  2. The standard error can be calculated meta-analytically across research, allowing us to update the replication value with new incoming evidence.
+  3. The standard error of pearsons r varies between 0 (infinte precision) and 1 (no precision). If we define the replication value as "yearly citation rate * SE", we will then know that the replication value will approach the yearly citation rate when precision is very low, and will approach 0 as precision becomes very high. When the replication value is 1, we know that yearly citation rate = 1/standard error of r. 
+
+```{r}
+
+std.err <- 0.1
+y.cit.rate <- 10
+
+rv <- y.cit.rate * std.err
+rv
+
+```
+
+
+# Problems
+
+There are a few problems with using the standard error of pearsons r as a measure of precision:
+  
+  1. Because pearsons r is bounded between -1 and 1, the standard error of r is not normally distributed around r. It is unclear whether it is correct to use one number to represent the error around r. 
+  2. The confidence interval surrouning R seems to decrease as r increase. Thus, the standard error of r might depend on the effect size, r, which we would not want, as artificially inflated effect sizes would thenbecome artificially less valuable to replicate. 
+  3. It is not perfectly clear how one should convert a standard error of another effect size into a standard error for pearsons r. Using Cohens d as an example, should the standard error of d be z-transformed into an r value? Or are one supposed to convert the effect size d into r, and then calculcate the variance r as 1/n-3? If the latter, it would seem that the standard error is no longer dependent upon the standard deviation of the sample. If so, one might as well just use N to calculate the replication value. 
+  
+  
+# Answers
+
+## 1. Is one number, SE for r, a legitimate estimate for the variance of r?
+
+From Borenstein (Chapter 6): Most meta-analysts do not perform syntheses on the correlation coefficient itself because **the variance depends strongly on the correlation**. Rather, the correlation is converted to the Fisher’s z scale (not to be confused with the z-score used with significance tests), and all analyses are performed using the transformed values. The results, such as the summary effect and its confidence interval, would then be converted back to correlations for presentation.
+
+### Is the standard error of r the same as the approximated standard error of r converted back from z?
+
+```{r}
+# The variance of r (Borenstein, formula 6.1):
+r = 0.5
+n = 100
+var_r <- (1-r^2)^2 / (n-1)
+se_r <- sqrt(var_r)
+
+# The variance of r, approximated by z:
+z = 0.5 * log( (1+r)/(1-r) )
+var_z <- 1/(n-3)
+
+```
+
+Actually, because the variance for r is heavily dependent on r itself, I don't think the variance of z is transformed. Rather, the effect size z is transformed to r, and variance for r is calculated from this r value. However, confidence intervals are calculated from z and transformed to r. 
+
+### How is the confidence interval of r calculated?
+
+```{r}
+# First, transform to z
+r = 0.9
+n = 10
+z = 0.5 * log( (1+r)/(1-r) )
+var_z <- 1/(n-3)
+se_z <- sqrt(var_z)
+
+# Then, calculate CIs for z
+ci_u <- z + se_z*qnorm(0.975)
+ci_l <- z - se_z*qnorm(0.975)
+
+# The CIs are at this point symmetric around the mean.
+plot(z, 1)
+segments(ci_l, 1, ci_u, 1)
+
+# However, we then transform z, ci_u, and ci_l, all z scores, into values of r. 
+e <- exp(1)
+r <- (e^(2*z) - 1) / (e^(2*z) + 1)
+ci_ur <- (e^(2*ci_u) - 1) / (e^(2*ci_u) + 1)
+ci_lr <- (e^(2*ci_l) - 1) / (e^(2*ci_l) + 1)
+
+# This transformation process automatically skews the CIs of r.
+plot(r, 1)
+segments(ci_lr, 1, ci_ur, 1)
+
+```
+
+Z is not parametrically transformed back to r. Because r is bounded between -1 and 1, the more extreme z becomes, the less of an effect increases in z will have on increases in r. This makes it possible to describe the variance of r with a single value, SEz, because the conversion of SEz to to SEr inherently introduce the skew depending on the size of r. This also seems to mean that SEr, directly calculated from r, is a poor measure of the precision of an estimate, and will bias large correlations to have low replication values. 
+
+## Is SEr independent of the effect size r?
+
+No. However, SEz is independent of r, as it is only dependent on n. 
+
+From Borenstein (Chapter 6): Most meta-analysts do not perform syntheses on the correlation coefficient itself because **the variance depends strongly on the correlation**. Rather, the correlation is converted to the Fisher’s z scale (not to be confused with the z-score used with significance tests), and all analyses are performed using the transformed values. The results, such as the summary effect and its confidence interval, would then be converted back to correlations for presentation.
+
+
+## I want an estimate for the meta-analytic standard error, and I want to convert this to a value that only varies between 0 and 1. Is it appropriate to calculate meta-SE for d/g, and then convert this value to pearsons r?
+
+Because SEz also only varies between 0 and 1, it serves the same purpose as SEr for calculating the replication value. However, SEz depends only on n. For meta-analyses, we need to know if by converting from cohens d to z, we loose all information about the standard deviation. If all that will influence SEz in the end is n, then we might as well choose a formula that works with n directly. 
+
+First of all, is the variance of d independent of d?
+
+```{r}
+# Say we have the following data.
+d <- c(0.000001,0.000001)
+n <- c(20, 20)
+a <- 4 # Correction factor. When we do not know the group n's, we assume they are the same, and the factor becomes 4.
+
+# We then calculate the meta analytic SE in d.
+var_d <- (n+n)/(n*n) + d^2 / (2*(n+n))  # Borenstein eq: 4.20
+w <- 1/var_d 
+d_meta <- sum(w * d) / sum(w)
+var_meta <- 1/sum(w)
+se_meta <- sqrt(var_meta)
+se_meta
+
+# Now, what happens if we increase d?
+d <- c(10, 10)
+var_d <- (n+n)/(n*n) + d^2 / (2*(n+n))  # Borenstein eq: 4.20
+w <- 1/var_d
+d_meta <- sum(w * d) / sum(w)
+var_meta <- 1/sum(w)
+se_meta <- sqrt(var_meta)
+se_meta
+
+
+
+d <- rep(2, 10)
+n <- rep(10, 10)
+a <- 4 # Correction factor. When we do not know the group n's, we assume they are the same, and the factor becomes 4.
+
+# We then calculate the meta analytic SE in d.
+var_d <- (n+n)/(n*n) + d^2 / (2*(n+n))  # Borenstein eq: 4.20
+w <- 1/var_d 
+d_meta <- sum(w * d) / sum(w)
+var_meta <- 1/sum(w)
+se_meta <- sqrt(var_meta)
+se_meta
+
+se_meta <- sqrt( var_d[1]/(length(d)*n[1]) )
+se_meta
+
+```
+
+Apparently, the variance of d increase with the value d. This goes for both independent (eq 4.20) and dependent (eq 4.28) group differences, and for Hedges g, which depends mostly on d (eq 4.24). 
+
+
+# After discussion with Marie Delacre, Fisher Z 1/(n-3) most appropriate approxmiation of variance of r. 
+
+## Problem: Is 1/(n-3) a good approximation of variance of repeated measured Cohen's d?
+
+In order to study the relationsship between variance of dz and Fishers z, we need to plot the variances computed for different n and levels of inter-trial correlation. 
+
+```{r}
+n <- 10:300
+diff <- 1
+sd_diff <- 2
+r <- 0.5
+
+# SE in dz
+sd_within <- sd_diff/sqrt(2*(1-r))            # Borenstein 4.27
+d <- diff / sd_within                         # Borenstein 4.26
+var_d <- ( (1/n)+(d^2/(2*n)) * (2*(1-r)) )    # Borenstein 4.28
+se_d <- sqrt(var_d)                           # Borenstein 4.29
+## convert to g
+j = 1-3/(4*(n-1)-1)     # Borenstein 4.22
+var_g <- j^2 * var_d    # Borenstein 4.24
+se_g <- sqrt(var_g)     # Borenstein 4.25
+
+# SE in Fisher's Z
+var_z <- 1/(n-3)        # Borenstein 6.3, assuming number of pairs as n
+se_z <- sqrt(var_z)     # Borenstein 6.4
+
+
+se_g <- sapply(seq(0.01, 0.99, length.out = 10), function(r) {
+  # SE in dz
+  sd_within <- sd_diff/sqrt(2*(1-r))          # Borenstein 4.27
+  d <- diff / sd_within                       # Borenstein 4.26
+  var_d <- ( (1/n)+(d^2/(2*n)) * (2*(1-r)) )  # Borenstein 4.28
+  # convert to g
+  j = 1-3/(4*(n-1)-1)   # Borenstein 4.22
+  var_g <- j^2 * var_d  # Borenstein 4.24
+  se_g <- sqrt(var_g)   # Borenstein 4.25
+})
+
+# reshape the data to long format
+se_g <- as.data.frame(se_g)
+names(se_g) <- paste("r=", round(seq(0.01, 0.99, length.out = 10), 2), sep = "")
+se_g$n <- n
+se_g$z <- se_z
+se_g <- gather(se_g, corr, se_g, 1:10)
+
+# Plot standard error for different values of inter-trial correlation.
+# The stippled black line represents standard error of Fisher's Z. 
+ggplot(se_g, aes(n, se_g, col = corr)) + 
+  geom_line() + 
+  geom_line(aes(y = z), size = 1, col = "black", linetype = 2)
+
+```
+
