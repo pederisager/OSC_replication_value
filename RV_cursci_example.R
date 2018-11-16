@@ -12,7 +12,7 @@
 # Load dataset and relevant packages
 
 library(rcrossref)
-library(ggplot2)
+library(tidyverse)
 library(googlesheets)
 source("../Meta-Data/MetaData_functions.R")
 source("../2018_OSC_Replication_Value/RV_functions.R")
@@ -91,12 +91,24 @@ curate_science$sum.RV <- curate_science$orig.citations / (as.numeric(format(Sys.
 # Plot replication values before and after aggregation
 RVdata <- aggregate(curate_science$orig.N.adj, by=list(orig.study.number=curate_science$orig.study.number, orig.RV=curate_science$orig.RV, sum.RV=curate_science$sum.RV), FUN=mean)
 RVdata <- RVdata[order(-RVdata$orig.RV),]
-RVdata$highRV <- ifelse(RVdata$orig.RV > 1 | RVdata$orig.study.number == "Stroop (1935) Study 2", RVdata$orig.RV, NA)
+RVdata$order <- 1:nrow(RVdata)
+names(RVdata)[2:3] <- c("original", "total")
+RVdata <- gather(data = RVdata, key = "stage", value = "RV", original:total, factor_key = TRUE)
+RVdata$highRV <- ifelse((RVdata$RV > 1 | RVdata$orig.study.number == "Stroop (1935) Study 2") & RVdata$stage == "original", RVdata$RV, NA)
 
-ggplot(data = RVdata, aes(x = 1:nrow(RVdata), y = orig.RV)) + 
-  geom_point() + 
-  geom_point(aes(y = sum.RV), col = "blue") + 
-  geom_text(aes(y = RVdata$highRV, label = orig.study.number), na.rm = TRUE, hjust = -.02, vjust = .0) +
-  scale_colour_manual(name="RV",values=c("Original"="black")) +
+
+ggplot(data = RVdata, aes(x = order, y = RV)) + 
+  geom_point(aes(col = stage)) + 
+  geom_text(aes(y = RVdata$highRV, label = orig.study.number), na.rm = TRUE, hjust = -.02, vjust = .0, check_overlap = TRUE) +
   theme_classic() +
+  scale_color_manual(values = c("black", "#3f75cc"))+
   labs(x = "Original study, sorted by original replication value", y = "Replication value")
+
+
+# Calculate relevant statistics
+
+# Mean replication value of original findings
+
+# Mean replication value, replications included
+
+# Mean percentage decrease in repication value from original to total
