@@ -21,10 +21,13 @@ curate_science <- read.csv("https://raw.githubusercontent.com/eplebel/science-co
 
 
 
-# Retrieve crossref metrics for original studies in the dataset
+# Retrieve crossref metrics for original studies in the dataset (only needed once)
 
 cursci_orig_cr <- rcrossref::cr_cn(dois = curate_science$orig.study.article.DOI, "citeproc-json")  # Download DOI meta-data from crossref 
 
+
+
+# Dataset set-up
 
 curate_science <- curate_science[order(curate_science$orig.study.number),]  # Order data to match crossref meta-data order (first author, alphabetically decending)
 curate_science$IVs <- as.character(curate_science$IVs)
@@ -84,31 +87,52 @@ sum_n_rep$x <- NULL
 
 curate_science <- merge(x = curate_science, y = sum_n_rep, by = "orig.study.number", all = TRUE)
 
+curate_science$rep.RV <- curate_science$orig.citations / (as.numeric(format(Sys.Date(), "%Y")) - curate_science$orig.publ.year) / (curate_science$orig.N.adj + curate_science$rep.N.adj)  # Calculate RV of original plus replication for every replication
 curate_science$sum.RV <- curate_science$orig.citations / (as.numeric(format(Sys.Date(), "%Y")) - curate_science$orig.publ.year) / curate_science$sum.N
 
 
 
-# Plot replication values before and after aggregation
-RVdata <- aggregate(curate_science$orig.N.adj, by=list(orig.study.number=curate_science$orig.study.number, orig.RV=curate_science$orig.RV, sum.RV=curate_science$sum.RV), FUN=mean)
+# Aggregate results for plotting purposes
+
+RVdata <- aggregate(curate_science$orig.N.adj, by=list(orig.study.number=curate_science$orig.study.number, orig.RV=curate_science$orig.RV, sum.RV=curate_science$sum.RV, y.cit=(curate_science$orig.citations/(2018-curate_science$orig.publ.year))), FUN=mean)
 RVdata <- RVdata[order(-RVdata$orig.RV),]
 RVdata$order <- 1:nrow(RVdata)
 names(RVdata)[2:3] <- c("original", "total")
 RVdata <- gather(data = RVdata, key = "stage", value = "RV", original:total, factor_key = TRUE)
-RVdata$highRV <- ifelse((RVdata$RV > 1 | RVdata$orig.study.number == "Stroop (1935) Study 2") & RVdata$stage == "original", RVdata$RV, NA)
+
+highest4 <- RVdata$orig.study.number[RVdata$RV %in% tail(sort(RVdata$RV[RVdata$stage == "total"]), 4)]  # Find 4 highest total replication values
+RVdata$highRV <- ifelse((RVdata$orig.study.number %in% highest4 | RVdata$orig.study.number == "Stroop (1935) Study 2") & RVdata$stage == "original", RVdata$RV, NA)  # Mark variables to be labeled in the plot
 
 
+
+# Derive relevant statistics and plots
+
+## Median replication value of original findings
+med.RVorig <- median(RVdata$RV[RVdata$stage == "original"])
+
+## Median replication value, replications included
+med.RVtot <- median(RVdata$RV[RVdata$stage == "total"])
+
+## Mean percentage decrease in repication value for every replication
+RVrepdec <- (curate_science$orig.RV - curate_science$rep.RV) / curate_science$orig.RV * 100
+m.RVrepdec <- mean(RVrepdec, na.rm = TRUE)
+
+## Mean percentage decrease in repication value from original to total
+RVsumdec <- (RVdata$RV[RVdata$stage == "original"] - RVdata$RV[RVdata$stage == "total"]) / RVdata$RV[RVdata$stage == "original"] * 100
+m.RVsumdec <- mean(RVsumdec, na.rm = TRUE)
+
+## Plots
+
+### Scatterplot of original and summary replication values, sorted by size
 ggplot(data = RVdata, aes(x = order, y = RV)) + 
   geom_point(aes(col = stage)) + 
-  geom_text(aes(y = RVdata$highRV, label = orig.study.number), na.rm = TRUE, hjust = -.02, vjust = .0, check_overlap = TRUE) +
+  geom_text(aes(y = RVdata$highRV, label = orig.study.number), na.rm = TRUE, hjust = -.02, vjust = .0, check_overlap = FALSE) +
   theme_classic() +
   scale_color_manual(values = c("black", "#3f75cc"))+
   labs(x = "Original study, sorted by original replication value", y = "Replication value")
 
+### histogram of replication value decrease for every replication
+hist(RVrepdec, breaks = 30, density = 20)
 
-# Calculate relevant statistics
-
-# Mean replication value of original findings
-
-# Mean replication value, replications included
-
-# Mean percentage decrease in repication value from original to total
+### histogram of sum replication value decrease
+hist(RVsumdec, breaks = 50, density = 30)
