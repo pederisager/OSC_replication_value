@@ -1,3 +1,90 @@
+#### load packages 
+library(tidyverse)
+library(plotly)
+library(gridExtra)
+library(MASS)
+library(viridis)
+
+
+
+#### define function to calculate RV formula
+repVal <- function(c, y, n) {
+  ## c = current citation count
+  ## y = years since publication
+  ## n = sample size
+  
+  vz <- 1/(n-3) # Fisher's Z variance
+  RV <- c/y*vz
+  RV
+}
+
+
+
+#### Plot formula behavior for range of input values on heatmap ####
+
+set.seed(1)  # set seed to ensure reproducibility of reported values and plots
+
+c.heat <- seq(1, 200, by=2)  # generate citation count values
+y.heat <- 10  # for simplicity, years since publication is held constant. This number could also be varied. For demonstrating formula behavior over a range of input, varying C, Y, or C/Y produce the same result.
+n.heat <- seq(11, 110)  # generate sample size values that will be used to calculate Vz
+rv.heat <- sapply(c.heat, function(x) {  # calculate formula replication value for all combinarions of input parameters
+  repVal(c = x, y = y.heat, n = n.heat)
+  })
+df.heat <- expand.grid("C" = c.heat, "Y" = y.heat, "n" = n.heat)
+df.heat$CbyY <- df.heat$C / df.heat$Y  # log average yearly citations in separate column for plotting purposes
+df.heat$rv <- apply(df.heat, 1, function(x) {
+  repVal(c = x["C"], y = x["Y"], n = x["n"])
+})
+
+ ggplot(df.heat, aes(x = n, y = CbyY)) +  # plot replication value on a heatmap as a function of sample size and average yearly citation rate
+    geom_raster(aes(fill = rv), interpolate = FALSE) +
+    scale_y_continuous(name = "Average yearly citation rate") +
+    scale_x_continuous(name = "Sample size", limit = c(11, 60)) +
+    scale_fill_viridis(name = "Replication \nValue", option =  "B")  +
+    theme_bw(base_size = 16) +  ggtitle(paste("Distribution of replication value over input parameters")) +
+    theme(  # eliminate background, gridlines, chart border, and readjust legend
+      plot.background = element_blank(),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.border = element_blank(), 
+      legend.position = c(0.85, 0.3),
+      legend.background = element_rect(fill="lightblue",
+                                       size=0.5, linetype="solid", 
+                                       colour ="purple"),
+      plot.title = element_text(hjust = 0.5))
+
+ 
+
+#### Simulate input values plot contribution of individual input parameters ####
+
+set.seed(2)  # set seed to ensure reproducibility of reported values and plots
+
+c.sim <- sample(x = 0:500, size = 10000, replace = TRUE)  # citation counts, drawn randomly from uniform distribution
+y.sim <- sample(x = 1:70, size = 10000, replace = TRUE)  # years since publication, drawn randomly from uniform distribution
+n.sim <- sample(x = 4:500, size = 10000, replace = TRUE)  # sample sizes, drawn randomly from uniform distribution
+rv.sim <- repVal(c = c.sim, y = y.sim, n = n.sim)  # calculate replication value for all random df(c, y, n) trios. 
+df.sim <- data.frame("C"= c.sim, "Y" = y.sim, "n" = n.sim, "rv" = rv.sim)  # combine variables in data frame
+
+a <- ggplot(data = df.sim, aes(x = c.sim, y = log(rv.sim, 10))) +  # plot RV by citation count
+  geom_point(alpha = 0.2) + 
+  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
+  theme_bw() + 
+  labs(x = "Number of citations", y = expression(log[10]("replication value")), title = "A")
+b <- ggplot(data = df.sim, aes(x = y.sim, y = log(rv.sim, 10))) +  # plot RV by years since publication
+  geom_point(alpha = 0.2) + 
+  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
+  theme_bw() + 
+  labs(x = "Years since publication", y = "", title = "B")
+c <- ggplot(data = df.sim, aes(x = n.sim, y = log(rv.sim, 10))) +  # plot RV by sample size
+  geom_point(alpha = 0.2) + 
+  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
+  theme_bw() + 
+  labs(x = "Sample size", y = "", title = "C")
+grid.arrange(a,b,c, nrow = 1)  # combine plots horizontally in one figure
+
+
+########### OLD ############
+
 
 #### Replication value: Simulations to study value behavior
 library(ggplot2)
@@ -196,12 +283,22 @@ grid.arrange(a, b, c, d, e, f, nrow = 2)
 
 # 3D plot
 
-sim$pubs.p.year <- log(sim$citations / (as.integer(format(Sys.Date(), "%Y")) - sim$pub.year))
-scatter3D(sim$pubs.p.year, sim$n, sim$rv)
-
 library(plotly)
-x <- sapply(seq(0, 1000, length.out = 100), function(x) x * seq(0, 1, length.out = 100))
-p <- plot_ly(x = seq(0, 1000, length.out = 100), y = seq(0, 1, length.out = 100), z = x) %>% add_surface()
+cit <- seq(0, 20, length.out = 100)
+n <- seq(20, 100, length.out = 100)
+rv <- sapply(cit, function(x) x * (1/(n-3)))
+
+plot_ly(x = cit, y = n, z = rv, type = 'mesh3d') %>% 
+  add_surface() %>%
+  layout(
+    scene = list(
+    xaxis = list(title = ""),
+    yaxis = list(title = ""),
+    zaxis = list(title = "")
+    ), 
+    font  = list(
+    size = 12
+    ))
 
 
 ## Simulate correlation data from scratch to investigate the relationship between N and RCApyP
@@ -215,10 +312,10 @@ cor <- cor(data)
 z <- 0.5 * log((1+r) / (1-r))
 
 x <- sapply(seq(4, 10000, by = 1), function(x) {
-vz <- 1/(x-3)
-sez <- sqrt(vz)
-ser <- (exp(1)^(2*sez)-1) / (exp(1)^(2*sez)+1)
-return(ser)
+  vz <- 1/(x-3)
+  sez <- sqrt(vz)
+  ser <- (exp(1)^(2*sez)-1) / (exp(1)^(2*sez)+1)
+  return(vz)
 })
 
 plot(seq(4, 10000, by = 1), 124*x)
@@ -269,3 +366,98 @@ moe_rl <- (exp(1)^(2*moe_zl)-1) / (exp(1)^(2*moe_zl)+1)
 
 
 x <- MASS::mvrnorm(n = 100, mu = c(0,0.1), Sigma = matrix(c(1,0.9,0.9,1), nrow = 2), empirical = TRUE)
+
+
+#### calculate the probability of drawing a finding with "true" RV in the 90th percentile based on formula RV procedure
+inspect10 <- function(r, n, pick, percentile) {
+  cormat <- matrix(c(1, r, r, 1), nrow = 2)
+  data <- as.data.frame(mvrnorm(n = n, mu = c(0, 0), Sigma = cormat))
+  names(data) <- c("form.RV", "true.RV")
+  data <- data[order(data$form.RV, decreasing = TRUE),]
+  picked <- data[1:pick,]
+  perc <- quantile(data$true.RV, percentile)
+  any(picked[,2]>perc)
+}
+
+sims <- replicate(1000, inspect10(r = 0, n = 1000, pick = 10, percentile = .9))
+mean(sims)
+
+par(mfrow=c(2,1))
+probs <- sapply(c(0, 0.1, 0.3, 0.5), function(r) {
+  sapply(c(50, 100, 200, 400), function(n) {
+    sims <- replicate(1000, inspect10(r = r, n = n, pick = 10, percentile = .95))
+    mean(sims)
+  })
+})
+
+rownames(probs) <- c(0, 0.1, 0.3, 0.5)
+colnames(probs) <- c(50, 100, 200, 400)
+matplot(colnames(probs), probs, type = 'l')
+legend('bottomright', inset=.05, legend=rownames(probs), 
+       pch=1, horiz=TRUE, col=1:5)
+
+
+probs <- sapply(c(0, 0.1, 0.3, 0.5), function(r) {
+  sapply(c(3, 5, 10, 20), function(pick) {
+    sims <- replicate(1000, inspect10(r = r, n = 200, pick = pick, percentile = .95))
+    mean(sims)
+  })
+})
+
+rownames(probs) <- c(0, 0.1, 0.3, 0.5)
+colnames(probs) <- c(3, 5, 10, 20)
+matplot(colnames(probs), probs, type = 'l')
+legend('bottomright', inset=.05, legend=rownames(probs), 
+       pch=1, horiz=TRUE, col=1:5)
+
+#### Simulate and plot correlation between formula RV and "true" RV
+
+cormat <- matrix(c(1, 0.3, 0.3, 1), nrow = 2)
+data <- as.data.frame(mvrnorm(n = 10000, mu = c(0, 0), Sigma = cormat))
+names(data) <- c("form.RV", "true.RV")
+data <- data[order(data$form.RV, decreasing = TRUE),]
+
+a <- ggplot() +
+  geom_histogram(fill = "blue",  aes(x = data[,2])) +
+  geom_histogram(aes(x = data[1:20000, 2]), fill = "red")
+
+cormat <- matrix(c(1, 0.8, 0.8, 1), nrow = 2)
+data <- as.data.frame(mvrnorm(n = 10000, mu = c(0, 0), Sigma = cormat))
+names(data) <- c("form.RV", "true.RV")
+data <- data[order(data$form.RV, decreasing = TRUE),]
+
+b <- ggplot() +
+  geom_histogram(fill = "blue",  aes(x = data[,2])) +
+  geom_histogram(aes(x = data[1:20000, 2]), fill = "red")
+
+grid.arrange(a, b, nrow = 2)
+
+par(mfrow=c(2,2))
+plot(as.data.frame(mvrnorm(n = 10000, 
+                           mu = c(0, 0), 
+                           Sigma = matrix(c(1, 0, 0, 1), nrow = 2))), 
+     xlab = "formula RV", 
+     ylab = "true RV")
+
+plot(as.data.frame(mvrnorm(n = 10000, 
+                           mu = c(0, 0), 
+                           Sigma = matrix(c(1, 0.3, 0.3, 1), nrow = 2))), 
+     xlab = "formula RV", 
+     ylab = "true RV")
+
+plot(as.data.frame(mvrnorm(n = 10000, 
+                           mu = c(0, 0), 
+                           Sigma = matrix(c(1, 0.5, 0.5, 1), nrow = 2))), 
+     xlab = "formula RV", 
+     ylab = "true RV")
+
+plot(as.data.frame(mvrnorm(n = 10000, 
+                           mu = c(0, 0), 
+                           Sigma = matrix(c(1, 0.8, 0.8, 1), nrow = 2))), 
+     xlab = "formula RV", 
+     ylab = "true RV")
+
+
+
+
+
