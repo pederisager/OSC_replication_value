@@ -50,14 +50,19 @@ print(paste("Stroop (1935) study 2 has an estimated replication value of", round
 
 #### Stroop (1935) replications reported in Verhaegen (1998), excluding non-close replications ####
 
-names.rep <- c("Cohn", "Hartman", "Houx 1", "Houx 2", "Kieley 1", "Kieley 2", "Kwong", "Li", "Panek 1", "Panek 2", "Salthouse", "Salthouse_Meinz", "Spieler", "Weir 1", "Weir 2", "Stroop")
-pub.year <- c(1984, 1991, 1993, 1993, 1997, 1997, 1995, 1996, 1984, 1984, 1996, 1995, 1996, 1997, 1997, 1935)
-n.rep <- c(20, 44, 42, 18, 16, 45, 82, 35, 19, 31, 40, 49, 27, 17, 24, 100)
-
-stroop_reps <- data.frame("study" = names.rep, "pub_year" = pub.year, "n" = n.rep)
-stroop_reps <- arrange(stroop_reps, pub.year)
-stroop_reps$n_adj <- (stroop_reps$n*a)/(1-r)
-stroop_reps$rv_seq <- citations / years_since_pub / (sapply(1:length(stroop_reps$n_adj), function(x) sum(stroop_reps$n_adj[1:x])))
+names.rep <- c("Cohn", "Hartman", "Houx 1", "Houx 2", "Kieley 1", "Kieley 2", "Kwong", "Li", "Panek 1", "Panek 2", "Salthouse", "Salthouse_Meinz", "Spieler", "Weir 1", "Weir 2", "Stroop")  # Study identifiers based on first author name and study number in Verhaeghen & De Meersman (1998) table 1.
+pub.year <- c(1984, 1991, 1993, 1993, 1997, 1997, 1995, 1996, 1984, 1984, 1996, 1995, 1996, 1997, 1997, 1935)  # Publication years of included replications
+n.rep <- c(20, 44, 42, 18, 16, 45, 82, 35, 19, 31, 40, 49, 27, 17, 24, 100)  # Sample size (young participants) of included replications, as reported in Verhaeghen & De Meersman (1998) table 1.
+stroop_reps <- data.frame("study" = names.rep, "pub_year" = pub.year, "n" = n.rep)  # gather variables in a data frame
+stroop_reps <- arrange(stroop_reps, pub.year)  # sort replications by publication year
+stroop_reps$n_adj <- (stroop_reps$n*a)/(1-r)  # Adjust sample size based on design. See supplementary materials 1 for further details. 
+# Calculate replication from fixed-effect meta-analytic variance estimate (see supplementary materials 1 for details.) 
+# Replication value is calculated sequentially by adding the variance weight from each consequetive replication to the total meta-analytic estimate.
+stroop_reps$rv_seq <- citations / years_since_pub * (sapply(1:length(stroop_reps$n_adj), function(x) {  
+  vz <- 1/(stroop_reps$n_adj[1:x]-3)
+  w <- 1/vz
+  1/sum(w)
+  }))
 
 ggplot(data = stroop_reps, aes(x = 1:nrow(stroop_reps), y = rv_seq, label = study)) + 
   geom_line() + xlim(0, 17) + 
