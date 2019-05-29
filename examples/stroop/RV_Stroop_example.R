@@ -27,11 +27,18 @@ n <- 100
 
 df.stroop <- read.csv("examples/stroop/Burns_etal_data/Data/cleanData.csv")  # Grab cleaned data from https://osf.io/yw7d9/ by downloading data (https://osf.io/3fu7q/) and R script (https://osf.io/ub46a/), and running data cleaning in R scrip.
 df.stroop <- subset(df.stroop, cond %in% c("neutral", "incongruent"))  # Keep oncly conditions relevant for Stroop (1935) study 2
-means.stroop <- df.stroop %>% group_by(cond, ID) %>% summarize(mean_rt = mean(rt))  # Calculate mean reaction time 
+means.stroop <- df.stroop %>% group_by(cond, ID) %>% summarize(mean_rt = mean(rt))  # Calculate mean reaction time for each subject in each condition
 sd1 <- sd(means.stroop$mean_rt[means.stroop$cond=="incongruent"])  # Calculate standard deviation for mean scores on incongruent trials
 sd2 <- sd(means.stroop$mean_rt[means.stroop$cond=="neutral"])  # Calculate standard deviation for mean scores on neutral trials
 sddiff <- sd(means.stroop$mean_rt[means.stroop$cond=="incongruent"] - means.stroop$mean_rt[means.stroop$cond=="neutral"])  # calculate standard error of the difference between mean scores
 r <- (sd1^2 + sd2^2 - sddiff^2) / (2*sd1*sd2)  # Calculate repeated measures correlation based on Lakens (2013). See supplementary materials 1 in this manuscript for details.
+# Calculate CIs around r (see Bohrenstein ch. 6 for equations)
+Z <- (1/2)*log((1+r)/(1-r))
+Z_CIu <- Z + qnorm(1-.05/2) * sqrt(1/(100-3))
+r_CIu <- (exp(2*Z_CIu)-1) / (exp(2*Z_CIu)+1)
+Z_CIl <- Z - qnorm(1-.05/2) * sqrt(1/(100-3))
+r_CIl <- (exp(2*Z_CIl)-1) / (exp(2*Z_CIl)+1)
+#
 a <- 2 # Each subject contributes data to two conditions
 n_adjusted <- (n*a)/(1-r)  # Adjust sample size based on design. See supplementary materials 1 for further details.
 
@@ -52,12 +59,10 @@ stroop_reps <- arrange(stroop_reps, pub.year)
 stroop_reps$n_adj <- (stroop_reps$n*a)/(1-r)
 stroop_reps$rv_seq <- citations / years_since_pub / (sapply(1:length(stroop_reps$n_adj), function(x) sum(stroop_reps$n_adj[1:x])))
 
-plot((citations / years_since_pub) / (sapply(1:length(stroop_reps$n_adj), function(x) sum(stroop_reps$n_adj[1:x]))))
-
 ggplot(data = stroop_reps, aes(x = 1:nrow(stroop_reps), y = rv_seq, label = study)) + 
-  geom_line() +
-  geom_text(angle = 30, hjust = "left", size = 8) + 
+  geom_line() + xlim(0, 17) + 
+  geom_text(angle = 25, hjust = "left", size = 5) + 
   theme_classic() +
   theme(tex = element_text(size = 20)) +
-  labs(x = "Replication order, sorted by publication year", y = "replication value")
+  labs(x = "Replication order, ordered by publication year", y = "replication value")
 
