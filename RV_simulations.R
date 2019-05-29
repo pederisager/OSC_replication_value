@@ -1,3 +1,13 @@
+#-----------------------------------------------------------#
+# The following script containts the code underlying the
+# simulations reported in the Replication Value manuscript.
+#
+# The replication value formula used for this example:
+# Yearly citation rate multiplied by variance of Fisher's Z.
+#-----------------------------------------------------------#
+
+
+
 #### load packages #### 
 library(tidyverse)
 library(plotly)
@@ -74,10 +84,15 @@ b <- ggplot(data = df.sim, aes(x = y.sim, y = log(rv.sim, 10))) +  # plot RV by 
   geom_point(alpha = 0.2) + 
   geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
   theme_bw() + 
-  labs(x = "Years since publication", y = "", title = "B")
+  labs(x = "Years since publication", y = expression(log[10]("replication value")), title = "B")
 c <- ggplot(data = df.sim, aes(x = n.sim, y = log(rv.sim, 10))) +  # plot RV by sample size
   geom_point(alpha = 0.2) + 
   geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
   theme_bw() + 
-  labs(x = "Sample size", y = "", title = "C")
-grid.arrange(a,b,c, nrow = 1)  # combine plots horizontally in one figure
+  labs(x = "Sample size", y = expression(log[10]("replication value")), title = "C")
+d <- ggplot(data = df.sim, aes(x = log(rv, 10))) +  # plot RV by sample size
+  geom_density(fill =  "black") +
+  geom_vline(xintercept = median(log(df.sim$rv, 10)), col = "blue", size = 2) +
+  theme_classic() + 
+  labs(x = expression(log[10]("replication value")), y = "", title = "D")
+grid.arrange(a,b,c,d, nrow = 2)  # combine plots horizontally in one figure
