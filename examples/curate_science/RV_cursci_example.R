@@ -15,8 +15,10 @@ setwd("C:/Users/20176239/Dropbox/jobb/PhD/Projects/2018_OSC_Replication_Value/ex
 library(rcrossref)
 library(jsonlite)
 library(tidyverse)
+library(gridExtra)
 library(stringr)
 library(googlesheets)
+library(canprot)
 #source("../../../Meta-Data/analysis/MetaData_functions.R")
 #source("../../../2018_OSC_Replication_Value/RV_functions.R")
 curate_science <- read.csv("https://raw.githubusercontent.com/eplebel/science-commons/master/CS.rep.table.csv", na.strings = "", stringsAsFactors = FALSE)
@@ -46,46 +48,7 @@ curate_science$rep.publ.year <- rep.years
 
 # Calculate replication value for original studies 
 
-# adjusted_n_orig <- sapply(1:nrow(curate_science), function(i) {
-#   
-#   x <- curate_science$orig.N[i]  # sample size
-#   f <- 1  # assume 1 factor
-#   lvl <- 2  # assume 2 levels
-#   
-#   if (grepl(";", curate_science$IVs[i]) & !grepl("Hughes et al", curate_science$IVs[i])) {  # Find all studies with more than one IV, but ignore the one case where ";" is not used to separate IVs 
-#     f <- length(unlist(strsplit(curate_science$IVs[i], ";")))  # Count factors in interaction
-#     lvl <- 2  # Assume for simplicity that all factors have 2 levels, which in this dataset is often but not always correct
-#     x <- x / (2^(f-1)) / (f*lvl) * 2  # Applies the formula for interaction conversion in SM1, and multiplies the result by two to get the total sample size for a 2 group effect. 
-#   } 
-#   
-#   if (grepl("within|^dependent|RM|paired|repeated", curate_science$design[i]) | curate_science$orig.ES.type[i] %in% "dz") {  # Find within-subject designs based on the effects size calculated (dz always used to refer to within-subject effect. PD was only used for precognition replication, also a within-subject design)
-#     x <- x * (f*lvl)/(1-0)  # Applies the formula for within-subject design conversin in SM1. The calculation assumes two groups and no correlation between the groups.
-#   }
-#   return(x)
-# })
-# 
-# curate_science$orig.N.adj <- unlist(adjusted_n_orig)
 curate_science$orig.RV <- curate_science$orig.citations / ( (2019 - curate_science$orig.publ.year) * 1/(curate_science$orig.N-3) )
-
-
-
-# Calculate combined adjusted n of replications
-
-# adjusted_n_rep <- sapply(1:nrow(curate_science), function(i) {
-#   x <- curate_science$rep.N[i]
-#   f <- 1
-#   lvl <- 2
-#   if (grepl(";", curate_science$IVs[i]) & !grepl("Hughes et al", curate_science$IVs[i])) {  # Find all studies with more than one IV, but ignore the one case where ";" is not used to separate IVs 
-#     f <- length(unlist(strsplit(curate_science$IVs[i], ";")))  # Count factors in interaction
-#     lvl <- 2  # Assume for simplicity that all factors have 2 levels, which in this dataset is often but not always correct
-#     x <- x / (2^(f-1)) / (f*lvl) * 2  # Applies the formula for interaction conversion in SM1, and multiplies the result by two to get the total sample size for a 2 group effect. 
-#   } 
-#   if (grepl("within|^dependent|RM|paired|repeated", curate_science$design[i]) | curate_science$rep.ES.type[i] %in% "dz") {  # Find within-subject designs based on the effects size calculated (dz always used to refer to within-subject effect. PD was only used for precognition replication, also a within-subject design)
-#     x <- x * (f*lvl)/(1-0)  # Applies the formula for within-subject design conversin in SM1. The calculation assumes two groups and no correlation between the groups.
-#   }
-#   return(x)
-# })
-# curate_science$rep.N.adj <- adjusted_n_rep
 
 sum_n_orig <- aggregate(curate_science$orig.N, by=list(orig.study.number=curate_science$orig.study.number), FUN=mean)
 sum_n_rep <- aggregate(curate_science$rep.N, by=list(orig.study.number=curate_science$orig.study.number), FUN=sum)
@@ -96,17 +59,11 @@ curate_science <- merge(x = curate_science, y = sum_n_rep, by = "orig.study.numb
 
 
 
-# Calculate for Fisher Z SE
+# Calculate replication value: average yearly citations * Fisher's Z variance
+
 curate_science$orig.RV <- curate_science$orig.citations / (2019 - curate_science$orig.publ.year) * (1 / (curate_science$orig.N - 3))
 curate_science$rep.RV <- curate_science$orig.citations / (2019 - curate_science$orig.publ.year) * (1 / (curate_science$orig.N + curate_science$rep.N - 3))  # Calculate RV of original plus replication for every replication
 curate_science$sum.RV <- curate_science$orig.citations / (2019 - curate_science$orig.publ.year) * (1 / (curate_science$sum.N - 3))
-
-
-
-
-
-
-
 
 
 
@@ -137,43 +94,76 @@ RVdata$highRV <- ifelse((RVdata$orig.study.number %in% highest4 | RVdata$orig.st
 
 # Derive relevant statistics and plots
 
+## Load Pyschological bulletin data
+pbul.df <- readRDS("examples/average_rv/psybull_meta_data.rds")
+pbul.df$years_since_pub <- 2019 - pbul.df$x_pubyear  # Years since publication
+pbul.df$cit_p_year <- pbul.df$x_crcited / pbul.df$years_since_pub  # average number of citations per year
+pbul.df$RV <- pbul.df$cit_p_year * (1/(pbul.df$x_n - 3))  # RV per record
+pbul.df <- pbul.df[!is.na(pbul.df$RV), ]  # Reduce data to those records for which RV can be calculated (i.e. has info on all input parameters and sample size >4)
+## Aggregate citation data over duplicate article references
+pbul.cit.df <- pbul.df[!duplicated(pbul.df$x_doi), c("x_doi", "x_crcited", "x_pubyear", "years_since_pub", "cit_p_year", "RV")]
+
+## Median citation count of original findings
+c.orig <- unique(RVdata[, c("orig.DOI", "citations")])[[2]]
+c.orig.iqr <- quantile(x = c.orig, probs = c(.25, .5, .75))
+c.orig.cles <- CLES(x = pbul.cit.df$x_crcited, y = c.orig)
+### Plot
+p.c <- ggplot(data = pbul.cit.df)  +
+  geom_density(aes(x = log(x_crcited, 10)), fill = "red", alpha = 0.5, na.rm = T) + 
+  geom_density(data = as.data.frame(c.orig), aes(x = log(c.orig, 10)), fill = "blue", alpha = 0.5, na.rm = T) +
+  theme_classic(base_size = 16) + 
+  labs(x = expression(log[10]("Citation count")), title = "A")
+
+## Median average yearly citation count of original findings
+cy.orig <- unique(RVdata[, c("orig.DOI", "y.cit")])[[2]]
+cy.orig.iqr <- quantile(x = cy.orig, probs = c(.25, .5, .75))
+cy.orig.cles <- CLES(x = pbul.cit.df$cit_p_year, y = cy.orig)
+### Plot
+p.cy <- ggplot(data = pbul.cit.df)  +
+  geom_density(aes(x = log(cit_p_year, 10)), fill = "red", alpha = 0.5, na.rm = T) + 
+  geom_density(data = as.data.frame(cy.orig), aes(x = log(cy.orig, 10)), fill = "blue", alpha = 0.5, na.rm = T) +
+  theme_classic(base_size = 16) + 
+  labs(x = expression(log[10]("Citations per year")), title = "B")
+
+## Median sample size of original findings
+n.orig <- RVdata$orig.N[RVdata$stage == "original"]
+n.orig.iqr <- quantile(x = n.orig, probs = c(.25, .5, .75))
+n.orig.cles <- CLES(x = pbul.df$x_n, y = n.orig)
+### Plot 
+p.n <- ggplot(data = pbul.df)  +
+  geom_density(aes(x = log(x_n, 10)), fill = "red", alpha = 0.5, na.rm = T) + 
+  geom_density(data = as.data.frame(n.orig), aes(x = log(n.orig, 10)), fill = "blue", alpha = 0.5, na.rm = T) +
+  theme_classic(base_size = 16) + 
+  labs(x = expression(log[10]("Sample size")), title = "C")
+
 ## Median replication value of original findings
-med.RVorig <- median(RVdata$RV[RVdata$stage == "original"])
-
+RV.orig <- RVdata$RV[RVdata$stage == "original"]
+RV.orig.iqr <- quantile(x = RV.orig, probs = c(.25, .5, .75))
+RV.orig.cles <- CLES(x = pbul.df$RV, y = RV.orig)
 ## Median replication value, replications included
-med.RVtot <- median(RVdata$RV[RVdata$stage == "total"])
-
-## Mean percentage decrease in repication value for every replication
-RVrepdec <- (curate_science$orig.RV - curate_science$rep.RV) / curate_science$orig.RV * 100
-m.RVrepdec <- mean(RVrepdec, na.rm = TRUE)
-
-## Mean percentage decrease in repication value from original to total
-RVsumdec <- (RVdata$RV[RVdata$stage == "original"] - RVdata$RV[RVdata$stage == "total"]) / RVdata$RV[RVdata$stage == "original"] * 100
-m.RVsumdec <- mean(RVsumdec, na.rm = TRUE)
-
-## Plots
+RV.tot <- RVdata$RV[RVdata$stage == "total"]
+RV.tot.iqr <- quantile(x = RV.tot, probs = c(.25, .5, .75))
+RV.tot.cles <- CLES(x = pbul.df$RV, y = RV.tot)
+### Plot
+p.RV <- ggplot(data = pbul.df)  +
+  geom_density(aes(x = log(RV, 10)), fill = "red", alpha = 0.5, na.rm = T) + 
+  geom_density(data = as.data.frame(RV.orig), aes(x = log(RV.orig, 10)), fill = "blue", alpha = 0.5, na.rm = T) +
+  geom_density(data = as.data.frame(RV.tot), aes(x = log(RV.tot, 10)), fill = "green", alpha = 0.5, na.rm = T) +
+  theme_classic(base_size = 16) + 
+  labs(x = expression(log[10]("Replication value")), title = "D")
+  
 
 ### Scatterplot of original and summary replication values, sorted by size
-ggplot(data = RVdata, aes(x = order, y = RV)) + 
-  geom_point(aes(col = stage), size = 3) + 
-  geom_text(aes(y = RVdata$highRV, label = orig.study.number), na.rm = TRUE, size = 5, hjust = -.02, vjust = .0, check_overlap = FALSE) +
+p.RV.sorted <- ggplot(data = RVdata, aes(x = order, y = RV)) + 
+  geom_bar(aes(fill = stage), stat = "identity", width = 1) + 
   theme_classic() +
-  theme(text = element_text(size=20)) +
-  scale_color_manual(values = c("black", "#3f75cc"))+
-  labs(x = "Original study, sorted by original replication value", y = "Replication value", title = "Curate Science Replications")
-
-### histogram of replication value decrease for every replication
-hist(RVrepdec, breaks = 30, density = 20)
-
-### histogram of sum replication value decrease
-hist(RVsumdec, breaks = 50, density = 30)
+  theme(text = element_text(size=16), legend.position="none") +
+  scale_fill_manual(values = c("blue", "green")) +
+  labs(x = "Original study, sorted by original replication value", y = "Replication value", title = "E")
 
 
-# Extract sample of high and low replication values for qualitative inspection
-
-## Extract highest and lowest ranked studies, including title, authors, year, abstract, citation info, altmetrics, sample size, and effect size.
-
-## Correlate replication value of original with number of replication studies
+### Combine plots into grid for manuscript
+grid.arrange(grid.arrange(p.c, p.cy, p.n, p.RV), p.RV.sorted, heights = c(2, 1))
 
 
 
