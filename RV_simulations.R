@@ -34,7 +34,7 @@ repVal <- function(c, y, n) {
 
 set.seed(1)  # set seed to ensure reproducibility of reported values and plots
 
-c.heat <- seq(1, 200, by=2)  # generate citation count values
+c.heat <- seq(1, 60)  # generate citation count values
 y.heat <- 10  # for simplicity, years since publication is held constant. This number could also be varied. For demonstrating formula behavior over a range of input, varying C, Y, or C/Y produce the same result.
 n.heat <- seq(11, 110)  # generate sample size values that will be used to calculate Vz
 rv.heat <- sapply(c.heat, function(x) {  # calculate formula replication value for all combinarions of input parameters
