@@ -77,17 +77,17 @@ df.sim <- data.frame("C"= c.sim, "Y" = y.sim, "n" = n.sim, "rv" = rv.sim)  # com
 
 a <- ggplot(data = df.sim, aes(x = c.sim, y = log(rv.sim, 10))) +  # plot RV by citation count
   geom_point(alpha = 0.2) + 
-  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
+  geom_smooth(method = "lm", formula = y ~ log(x, 10), se = FALSE, size = 2) +
   theme_bw() + 
   labs(x = "Number of citations", y = expression(log[10]("replication value")), title = "A")
 b <- ggplot(data = df.sim, aes(x = y.sim, y = log(rv.sim, 10))) +  # plot RV by years since publication
   geom_point(alpha = 0.2) + 
-  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
+  geom_smooth(method = "lm", formula = y ~ log(x, 10), se = FALSE, size = 2) +
   theme_bw() + 
   labs(x = "Years since publication", y = expression(log[10]("replication value")), title = "B")
 c <- ggplot(data = df.sim, aes(x = n.sim, y = log(rv.sim, 10))) +  # plot RV by sample size
   geom_point(alpha = 0.2) + 
-  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE, size = 2) +
+  geom_smooth(method = "lm", formula = y ~ log(x, 10), se = FALSE, size = 2) +
   theme_bw() + 
   labs(x = "Sample size", y = expression(log[10]("replication value")), title = "C")
 grid.arrange(a,b,c, nrow = 1)  # combine plots horizontally in one figure
