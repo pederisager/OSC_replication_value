@@ -2,6 +2,8 @@
 
 #### Load data and set up data frames ####
 
+setwd("C:/Users/20176239/Dropbox/jobb/PhD/Projects/2018_OSC_Replication_Value")
+
 # Load Pyschological bulletin data
 pbul.df <- readRDS("examples/average_rv/psybull_meta_data.rds")
 
